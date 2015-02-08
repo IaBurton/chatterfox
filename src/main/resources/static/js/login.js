@@ -1,3 +1,12 @@
+$(document).ready(function ()
+{
+	$('#user_login').keyup(function(event){
+    	if(event.keyCode == 13){
+        	$('#enter').click();
+    	}
+	});
+});
+
 function loginUser() {
 
 	var userName = $('#user_login').val();
