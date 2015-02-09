@@ -1,5 +1,6 @@
 package com.code.fox.chatterfox;
 
+import org.joda.time.LocalTime;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -23,6 +24,11 @@ public class App {
 	
 	public static void main(String[] args) 
 	{
+		//Joda-Time imported through Maven. useful classes for easy time-stamps.
+		//Imported by Javier Sanchez
+		LocalTime localTime = new LocalTime();
+		System.out.println("Current Time is: " + localTime.toString());
+		
 		SpringApplication.run(App.class, args);
 	}
 
