@@ -1,3 +1,5 @@
+package com.code.fox.chatterfox;
+
 import com.google.common.base.Joiner;
  
 public class GuavaApp
