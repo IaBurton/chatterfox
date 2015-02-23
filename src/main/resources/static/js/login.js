@@ -53,7 +53,7 @@ $(document).ready(function ()
 });
 
 
-function loginUser() {
+function loginUser() {				// I think this is somehow the function need to get to sync up with the security configuration....this file is the one that I made a dummy html login to get it to work
 
 	var userName = $('#user_login').val();
 
