@@ -18,7 +18,7 @@ public class App {
 	@Bean
 	public AnonManager anonManager()
 	{
-		return new AnonManager();
+		return AnonManager.getInstance();
 	}
 	
 	public static void main(String[] args) 

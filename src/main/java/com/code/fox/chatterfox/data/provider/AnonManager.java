@@ -7,6 +7,17 @@ import com.code.fox.chatterfox.data.User;
 import com.code.fox.chatterfox.data.UserMap;
 //basic anonymous implementation of usermanager, listAllUsers not implemented yet
 public class AnonManager implements UserManager {
+	private static AnonManager instance = null;
+	
+	private AnonManager(){}
+	
+	public static AnonManager getInstance(){
+		if(instance == null){
+			return new AnonManager();
+		}else {
+			return instance;
+		}
+	}
 	
 	/** Retain AnonUsers while they're logged in */
 	private static final UserMap userMap = new UserMap();
