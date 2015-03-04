@@ -16,5 +16,4 @@ public class ChatController {
 		//could do other things such as stats or filtering here as well
 		return message;
 	}
-	
 }
