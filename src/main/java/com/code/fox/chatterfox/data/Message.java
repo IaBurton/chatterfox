@@ -3,7 +3,7 @@ package com.code.fox.chatterfox.data;
 //simple message class to be JSONified
 public class Message {
 
-	private String name, message;
+	private String name, message, time;
 	
 	public String getName()
 	{
@@ -15,4 +15,8 @@ public class Message {
 		return message;
 	}
 
+	public String getTime()
+	{
+		return time;
+	}
 }

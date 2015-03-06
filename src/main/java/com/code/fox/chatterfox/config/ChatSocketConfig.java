@@ -13,7 +13,7 @@ public class ChatSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 	@Override
 	public void configureMessageBroker(MessageBrokerRegistry config)
 	{
-		config.enableSimpleBroker("/base");
+		config.enableSimpleBroker("/base", "/private");
 		config.setApplicationDestinationPrefixes("/anon");
 	}
 

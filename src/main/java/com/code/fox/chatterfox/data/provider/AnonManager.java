@@ -1,5 +1,6 @@
 package com.code.fox.chatterfox.data.provider;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.code.fox.chatterfox.data.AnonUser;
@@ -45,8 +46,7 @@ public class AnonManager implements UserManager {
 
 	@Override
 	public List<User> listAllUsers() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ArrayList<User>(userMap.values());
 	}
 	
 

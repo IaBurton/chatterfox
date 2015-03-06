@@ -14,8 +14,11 @@
 	<label>Username: </label><label id="username">${user.name}</label><br><br>
 	<input type="text" id="message"><button id="enter" onclick="sendMessage()">Enter</button><br><br>
 	
-	<!-- <button id="dis" onclick="disconnect()">dis</button><br><br> commented out for now -->
+	<label>Private Username</label><br>
+	<input type="text" id="otheruser"><button onclick="sendPrivMessage()">Send</button><br><br>
 	
-	<p id="chat_space"></p>
+	<button id="logout" onclick="logout()">Logout</button><br><br>
+	
+	<div id="chat_space" style="height : 20em; overflow : auto;"></div>
 
 </html>
