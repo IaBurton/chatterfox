@@ -10,6 +10,10 @@ var receivePrivMessage = function(message) {
     showMessage(1, JSONified.name + " (" + JSONified.time + ") " + "- " + JSONified.message);
 }
 
+var receiveUsers = function(message) {
+    showUsers(message.body);
+}
+
 function showMessage(bool, txtmessage) {
     if(bool == 0) {
         $('#chat_space').append(txtmessage + '<br>');
@@ -23,6 +27,10 @@ function showMessage(bool, txtmessage) {
     }, "fast");
 }
 
+function showUsers(users) {
+    $('#users_space').html(users);
+}
+
 function connect() {
 	var socket = new SockJS('/conn');
 	
@@ -32,6 +40,7 @@ function connect() {
         console.log('Connected: ' + frame);
         
         stompClient.subscribe('/base/chat/anonmess', receiveMessage);
+        stompClient.subscribe('/base/chat/users', receiveUsers);
         stompClient.subscribe("/private/conn/message/" + $('#username').text(), receivePrivMessage);
     });
 }
@@ -90,7 +99,7 @@ function logout() {
 }
 
 window.onload = connect();
-window.onbeforeunload = disconnect();
+window.onbeforeunload = logout();
 $('#otheruser').watermark('Other username for private message');
 
 $(document).ready(function ()

@@ -19,6 +19,12 @@
 	
 	<button id="logout" onclick="logout()">Logout</button><br><br>
 	
-	<div id="chat_space" style="height : 20em; overflow : auto;"></div>
+	<div id="parent">
+	   <div id="chat_space" style="height : 30em; position: absolute; width: 80%; overflow : auto;"></div>
+	   <div style="height : 30em; position: absolute; left: 70%; width: 30%;">
+	       <label>Users Logged In</label><br>
+	       <p id="users_space" style="overflow : auto;"></p>
+	   </div>
+	</div>
 
 </html>

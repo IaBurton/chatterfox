@@ -49,5 +49,15 @@ public class AnonManager implements UserManager {
 		return new ArrayList<User>(userMap.values());
 	}
 	
-
+	@Override
+	public String toString()
+	{
+		String list = "";
+		
+		for(User user : userMap.values()) {
+			list += user + "<br>";
+		}
+		return list;
+	}
+	
 }

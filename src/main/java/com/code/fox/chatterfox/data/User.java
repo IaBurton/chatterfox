@@ -23,4 +23,10 @@ public abstract class User {
 	public void setCreationTime(String creationTime) {
 		this.creationTime = creationTime;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return name;
+	}
 }

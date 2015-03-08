@@ -24,7 +24,6 @@ public class BaseController {
 		if(!anonManager.hasUser(name))
 		{
 			anonManager.updateUser(new AnonUser(name));
-			System.out.println("added " + name);
 			return "success";	
 		}
 		else
@@ -35,7 +34,6 @@ public class BaseController {
 	void logoutUser(@PathVariable("name") String name) throws Exception
 	{
 		anonManager.deleteUser(name);
-		System.out.println("deleted " + name);
 	}
 	
 	@RequestMapping(value = "/chat/{name}", method = RequestMethod.GET)
