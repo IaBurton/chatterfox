@@ -1,2 +1,4 @@
-# chatterfox
-Extendable IRC style chat client utilizing web sockets and STOMP protocol
+# Chatter-Fox
+Web chat client built with web sockets and STOMP protocol.
+App: www.chatterfox.us
+Team/App Page: http://cs480-projects.github.io/teams/codefox.html 

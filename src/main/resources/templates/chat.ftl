@@ -25,7 +25,7 @@
 				<li class="sidebar-brand" style="color: white">Welcome to
 					Chatterfox!</li>
 				<li><a href="#">Username: <label id="username">${user.name}</label></a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="http://cs480-projects.github.io/teams/codefox.html">About</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
 
 
@@ -110,7 +110,7 @@
 								<div class="col-lg-12">
 									<div class="panel panel-primary">
 										<div class="panel-heading">Global Chat</div>
-										<div class="panel-body" id="chat_space" style="height: 75%"></div>
+										<div class="panel-body" id="chat_space" style="height: 75%; overflow-y: scroll"></div>
 									</div>
 
 									<div class="row">
