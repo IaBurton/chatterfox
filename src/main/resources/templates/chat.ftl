@@ -25,7 +25,7 @@
 				<li class="sidebar-brand" style="color: white">Welcome to
 					Chatterfox!</li>
 				<li><a href="#">Username: <label id="username">${user.name}</label></a></li>
-				<li><a href="http://cs480-projects.github.io/teams/codefox.html">About</a></li>
+				<li><a href="http://cs480-projects.github.io/teams/codefox.html" target="_blank">About</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
 
 
