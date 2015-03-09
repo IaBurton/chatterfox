@@ -1,13 +1,22 @@
+<!DOCTYPE html>
 <html>
-
-    <head>
-        <title>Chatterfox Login</title>
-        <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chatterfox Login</title>
+        
+        <script src="/js/jquery-2.1.3.min.js"></script>
         <script src="/js/login.js"></script>
-    </head>
-    
-    <label>-Chatterfox Username Login-</label><br><br>
-    <input type="text" id="user_login"><button id="enter" onclick="loginUser()">Login</button>
-
-
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<img class="centered" src="img/chatterfoxlogo.png" alt="Chatterfox Logo" align="middle"/>
+		<div id="login">
+			<div id="triangle"></div>
+			<h1>Come Join Us!</h1>
+			<div id="form">
+				<input type="user" placeholder="Username" id="user_login" />
+				<input type="submit" id="submit" value="Log In!" onClick="loginUser()" />
+			</div>
+		</div>
+	</body>
 </html>

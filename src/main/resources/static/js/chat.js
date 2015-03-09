@@ -57,6 +57,7 @@ function sendMessage() {
     var ctime = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     
 	Message(stompClient, "/anon/conn", ctime);
+	
 }
 
 function sendPrivMessage() {
@@ -101,12 +102,3 @@ function logout() {
 window.onload = connect();
 window.onbeforeunload = logout();
 $('#otheruser').watermark('Other username for private message');
-
-$(document).ready(function ()
-{
-	$('#message').keyup(function(event){
-    	if(event.keyCode == 13){
-    	    $('#enter').click();
-    	}
-	});
-});

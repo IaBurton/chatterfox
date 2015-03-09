@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#user_login').keyup(function(event){
         if(event.keyCode == 13){
-            $('#enter').click();
+            $('#submit').click();
         }
     });
 });
@@ -10,7 +10,7 @@ $(document).ready(function () {
 function loginUser() {
 
 	var userName = $('#user_login').val();
-
+	
 	if (userName) {
 		$.ajax(
 				{
@@ -32,6 +32,6 @@ function loginUser() {
 					}
 				});
 	} else {
-		alert("Failed");
+		alert("Please enter a username!");
 	}
 }
